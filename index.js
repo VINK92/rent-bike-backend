@@ -14,7 +14,7 @@ const accessLogStream = fs.createWriteStream(path.join(__dirname, "access.log"),
 const rentRouter = require("./routes/rent.routes")
 const usersRouter = require("./routes/users.routes")
 
-const PORT = process.env.port || 8080
+const PORT = process.env.PORT || 8080
 
 class Server {
   start() {
